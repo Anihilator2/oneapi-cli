@@ -316,7 +316,7 @@ func (cli *CLI) askPath(sample aggregator.Sample, language string, path string) 
 			cli.app.Draw()
 		}).SetDynamicColors(true)
 	form := cview.NewForm().
-		AddInputField("Destination", path, 55, nil, func(t string) {
+		AddInputField("Directory", path, 55, nil, func(t string) {
 			path = t
 		}).
 		AddButton("Create", func() {
